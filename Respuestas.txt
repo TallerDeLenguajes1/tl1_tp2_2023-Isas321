@@ -1,0 +1,1 @@
+#No se puede ver el archivo tp_1_2.c porque pertenece a otra rama y al aplicar checkout main lo oculte para quedarme con la version seleccionada
