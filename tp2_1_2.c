@@ -3,14 +3,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define N 20 //Esta es una variable global va fuera del main y debajo de las bibliotecas
+
 int main(){  
-    #define N 20
     int i;
     double vt[N];
     double *puntero;
-
     puntero=vt;     //Guardo la direccion de memoria del primer elemento del vector, direccion de v[0]
-
+    srand(time(NULL));  // Es importante la inicializacion del reloj, para el rand  
     for(i = 0;i<N; i++)
     {
         *(puntero+i)=1+rand()%100;                      //Guardo el valor de rand en "vt[0+i]"                          
